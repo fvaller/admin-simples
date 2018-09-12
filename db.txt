@@ -1,0 +1,40 @@
+-- phpMyAdmin SQL Dump
+-- version 3.1.3.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tempo de Geração: Abr 19, 2010 as 02:45 PM
+-- Versão do Servidor: 5.1.33
+-- Versão do PHP: 5.2.9
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Banco de Dados: `sistemas`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuario`
+--
+
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `codusuario` int(3) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `login` varchar(15) NOT NULL,
+  `senha` varchar(15) NOT NULL,
+  `tipo` char(1) NOT NULL COMMENT '0-Super Admin 1-Admin 2-Usuario',
+  `data_aces` datetime DEFAULT NULL,
+  `ip_aces` varchar(15) NOT NULL,
+  `status` char(1) NOT NULL COMMENT '0-desabilitado 1-habilitado',
+  KEY `codusuario` (`codusuario`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`codusuario`, `nome`, `email`, `login`, `senha`, `tipo`, `data_aces`, `ip_aces`, `status`) VALUES
+(3, 'admin', '', 'admin', 'admin', '0', '2010-04-19 14:45:06', '127.0.0.1', '1');

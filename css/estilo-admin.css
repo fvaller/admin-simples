@@ -1,0 +1,127 @@
+/* RESET - tira a formatação dos nevegadores para uma maior compatibilidade do css */
+* {margin:0; padding:0; border:0;}
+.reset-margin {margin:0 !important;}
+
+/* GERAL - css usado em diversas parte do site */
+body{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;   background-color: #DDD;  }
+a:link, a:visited, a:active {text-decoration:none; outline: none; color: #333; }
+a:hover {text-decoration:underline;}
+.left {float:left;}
+.right {float:right;}
+.clear{clear: both;}
+.botao{text-decoration: none; font-size: 12px; padding: 3px 20px !important; border: 1px solid #D6D6D6; color: #333;}
+.botao:link, .botao:visited, .botao:focus{border: 1px solid #D6D6D6;}
+.botao:hover{text-decoration: none;}
+.img-left{float: left; margin: 0px 10px 5px 0;}
+.img-right{float: right; margin: 5px 0 5px 10px;}
+.msn{border: 1px solid #ffdd00; background:url(../imagens/warning.png) no-repeat left center #fffddd; color: #000000; padding: 8px 0 8px 30px; margin: 10px 0;  }
+/* SITE */
+#site{ margin:0 auto;}
+
+.conteudo {width:960px; margin:0 auto; }
+
+.login{margin: 0 auto; width: 450px; padding: 100px 0 0 0;}
+.login .login-top{display: block; color: #FFF; padding: 10px; background:url(../imagens/bg-topo.jpg) repeat-x 0 0 #A21010; border-bottom: 1px solid #DC1414; border-top: 1px solid #DC1414;}
+.login .login-top h1{padding: 5px 0 5px 40px; font-size: 18px; background: url(../imagens/users_32.png) no-repeat left center;}
+.login .flogin{border-left: 1px solid #999; border-right: 1px solid #999; border-bottom: 1px solid #999; padding: 20px 20px; background-color: #FFF;}
+.login .flogin p{margin: 10px 0;}
+.login .flogin label{display: block; margin-bottom: 5px; font-weight: bold;}
+.login .flogin input{border: 1px solid #ccc; padding: 5px 5px;}
+.login .flogin .usuario, .login .flogin .psw{width: 250px;}
+
+
+#topo{
+  display: block;
+  height: 100px;
+  background: url(../imagens/bg-topo.jpg) repeat-x left top #3A4043;
+}
+#topo #logo{
+  margin: 30px 0 0 0;
+}
+#topo #logo h1{
+  color: #FFF;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#topo .boxuser{
+/*  color: #C1CAD0;*/
+  color: #FFF;
+  margin: 35px 0 0 0;
+  background: url(../imagens/user_32a.png) no-repeat left top;
+  padding: 0px 0 0px 20px;
+}
+#topo .boxuser small{
+  color: #C1CAD0;
+}
+
+#topo .boxuser a{
+  text-decoration: none;
+  color: #CEAC0F;
+  font-weight: bold;
+}
+#topo .boxuser a:hover{
+  color: #FFF;
+}
+
+#navbar{
+  display: block;
+/*  background: #E3E3E3;*/
+  background: #FFF;
+  height: 40px;
+  border-bottom: 1px solid #999;
+}
+#navbar ul{
+  margin: 0;
+  display: block;
+}
+#navbar ul li{
+  display: block;
+  float: left;
+  list-style: none;
+  padding: 13px 0px;
+}
+#navbar ul li a{
+  text-decoration: none;
+  padding: 14px 20px;
+}
+#navbar ul li a:hover{
+  background: #333;
+  color: #FFF;
+}
+#navbar ul li .select{
+  background: #333;
+  color: #FFF;
+  font-weight: bold;
+}
+
+#paginas{
+  margin: 20px 0;
+}
+#paginas .conteudo{
+  border: 1px solid #ccc;
+  background: #FFF;
+}
+#paginas .pag-topo{
+  border-bottom: 1px solid #ccc;
+  padding: 8px 20px;
+  background: #E8E8E8;
+  color: #000;
+}
+#paginas .pag-topo h2{
+  font-size: 16px;
+  font-weight: bold;
+}
+#paginas .pag-corpo{
+  padding: 20px;
+}
+
+
+#rodape{
+  margin: 20px 0;
+}
+#rodape .conteudo{
+  border-top: 1px solid #3A4043;
+  padding: 10px 0;
+}
+
